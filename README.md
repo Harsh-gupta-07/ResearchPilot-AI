@@ -20,6 +20,26 @@ This project involves the design and implementation of an AI-based research auto
 
 The project emphasizes progression from classical NLP and ML concepts to agentic AI workflows, LLM orchestration, and deployment.
 
+## Getting Started
+
+1. **Install Requirements**:
+   It is recommended to use a virtual environment. Install dependencies via:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Run the App**:
+   ```bash
+   streamlit run app.py
+   ```
+3. Open your browser and navigate to the address shown in your terminal (usually `http://localhost:8501`).
+
+## Project Structure
+- `app.py`: Main Streamlit application file.
+- `src/`: Contains source code for logic.
+  - `data_fetcher.py`: Document text extraction and Wikipedia fetching.
+  - `nlp_pipeline.py`: NLP processing functions (cleaning, TF-IDF, LDA, TextRank).
+- `requirements.txt`: Python package dependencies.
+
 ---
 
 ### Constraints & Requirements
@@ -99,23 +119,3 @@ The project emphasizes progression from classical NLP and ML concepts to agentic
 | Phase | Weight | Criteria |
 | :--- | :--- | :--- |
 | **Mid-Sem (Milestone 1)** | 25% | Correctness of NLP Pipeline (Preprocessing, LDA, TF-IDF), Quality of Topic Modeling & Keyword Extraction. |
-
-## Getting Started
-
-1. **Install Requirements**:
-   It is recommended to use a virtual environment. Install dependencies via:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. **Run the App**:
-   ```bash
-   streamlit run app.py
-   ```
-3. Open your browser and navigate to the address shown in your terminal (usually `http://localhost:8501`).
-
-## Project Structure
-- `app.py`: Main Streamlit application file.
-- `src/`: Contains source code for logic.
-  - `data_fetcher.py`: Document text extraction and Wikipedia fetching.
-  - `nlp_pipeline.py`: NLP processing functions (cleaning, TF-IDF, LDA, TextRank).
-- `requirements.txt`: Python package dependencies.
